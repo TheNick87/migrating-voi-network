@@ -21,7 +21,7 @@ The problem here is that docker is not properly installed, so you by following [
 `sudo usermod -aG docker ${USER}` \
 NOTE! Restart your console before move forward (logout + login) \
 \
-To check if it's ok you can do some checks: \
+To check if it's ok you can execute: \
 `sudo docker container ls` This sould return nothing (but not an error) \
 or \
 `sudo docker run hello-world` This should return some "Hello World" message 
@@ -31,4 +31,23 @@ Now that everithing is working exegute the first command again and the procedure
 ```
 export VOINETWORK_NETWORK=mainnet
 /bin/bash -c "$(curl -fsSL https://get.voi.network/swarm)"
+```
+
+## Final message
+In my opinion the final message is useful, so I copied and pasted it here:
+```
+For useful information, check out:
+ - Voi Swarm documentation: https://voinetwork.github.io/voi-swarm/
+ - Get notified when to renew participation keys: https://voinetwork.github.io/voi-swarm/operating/setup-notifications/
+ - Voi Swarm CLI Tools: https://voinetwork.github.io/voi-swarm/cli-tools/
+
+Account setup skipped. Detected existing account with address: <Your new address>
+To see network participation status use /home/ubuntu/voi/bin/get-participation-status <Your new address>
+To go online use /home/ubuntu/voi/bin/go-online <Your new address>
+
+To easily access commands from /home/ubuntu/voi/bin, add the following to /home/ubuntu/.bashrc or /home/ubuntu/.profile:
+  export PATH="$PATH:/home/ubuntu/voi/bin"
+
+To add to your ~/.bashrc, run:
+  echo 'export PATH="$PATH:/home/ubuntu/voi/bin"' >> ~/.bashrc && source ~/.bashrc
 ```
