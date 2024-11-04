@@ -51,3 +51,13 @@ To easily access commands from /home/ubuntu/voi/bin, add the following to /home/
 To add to your ~/.bashrc, run:
   echo 'export PATH="$PATH:/home/ubuntu/voi/bin"' >> ~/.bashrc && source ~/.bashrc
 ```
+
+## Start telemetry
+To start the telemetry by following [this guide](https://voinetwork.github.io/voi-swarm/updating/telemetry/) and [this guide](https://voinetwork.github.io/voi-swarm/cli-tools/#set-telemetry-name-and-guid) you should execute: \
+`~/voi/bin/set-telemetry-name` \
+and to monitor it \
+`~/voi/bin/get-telemetry-status` \
+
+## Check for node status
+To check the node status you need to execute the command: \
+`~/voi/bin/get-node-status`
