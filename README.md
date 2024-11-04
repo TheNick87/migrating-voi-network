@@ -6,7 +6,7 @@ To know if there is a previuos active service: `systemctl status voi` \
 To stop previous service: `systemctl stop voi`
 
 ## Install new service
-As said in [this official guide](https://voinetwork.github.io/voi-swarm/updating/migrating-network/) \
+As said in [this official guide](https://voinetwork.github.io/voi-swarm/updating/migrating-network/) 
 ```
 export VOINETWORK_NETWORK=mainnet
 /bin/bash -c "$(curl -fsSL https://get.voi.network/swarm)"
@@ -24,7 +24,7 @@ NOTE! Restart your console before move forward (logout + login) \
 To check if it's ok you can do some checks: \
 `sudo docker container ls` This sould return nothing (but not an error) \
 or \
-`sudo docker run hello-world` This should return some "Hello World" message \
+`sudo docker run hello-world` This should return some "Hello World" message 
 
 ## Finish the procedure
 Now that everithing is working exegute the first command again and the procedure should keep going until the end \ 
