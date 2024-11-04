@@ -16,12 +16,12 @@ Then let it do its work until it finish or give you an error
 ## Troubleshoot
 I don't know why but it could happen (to me it happend all the time) that the procedure return this error: \
 `permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: ...` \
-The problem here is that docker is not properly installed, so you by following [this guide](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket) it turns out that you need to execute \
+The problem here is that docker is not properly installed, so by following [this guide](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket) it turns out that you need to execute \
 `sudo groupadd docker` \
 `sudo usermod -aG docker ${USER}` \
 NOTE! Restart your console before move forward (logout + login) \
 \
-To check if it's ok you can execute: \
+To check if it's all ok you can execute: \
 `sudo docker container ls` This sould return nothing (but not an error) \
 or \
 `sudo docker run hello-world` This should return some "Hello World" message 
